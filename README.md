@@ -6,19 +6,19 @@
 ## Status
 
 ### Must Have
-[] Main Page
-[] Activities
-[] Building / Room Details
+- [ ] Main Page
+- [ ] Activities
+- [ ] Building / Room Details
 
 ### Should Have
-[] User Validation
-[] User Notification
+- [ ] User Validation
+- [ ] User Notification
 
 ### Could Have
-[] Activity Details
-[] Activity Locations
-[] User Bank Details
+- [ ] Activity Details
+- [ ] Activity Locations
+- [ ] User Bank Details
 
 ### Won't Have
-[] Toaster
-[] International Scope
+- [ ] Toaster
+- [ ] International Scope
