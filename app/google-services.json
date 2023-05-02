@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "222967384202",
+    "project_id": "exotica-79009",
+    "storage_bucket": "exotica-79009.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222967384202:android:81383f2613fb9400210573",
+        "android_client_info": {
+          "package_name": "com.example.exotica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222967384202-6bmeccv5f9eq5dp8p9fpm8noqj7fub7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCflmcHIyf8xByy3GYiUzwHCWY-9Fdd00U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222967384202-6bmeccv5f9eq5dp8p9fpm8noqj7fub7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
