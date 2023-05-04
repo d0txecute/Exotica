@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <ImageView
+        android:id="@+id/ivActivityImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+
+    <TextView
+        android:id="@+id/tvActivityName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ivActivityImage"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvActivityLocation"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvActivityName"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvActivityContactPhone"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvActivityLocation"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvActivityContactEmail"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvActivityContactPhone"
+        />
+
+    <TextView
+        android:id="@+id/tvActivityDesc"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvActivityContactEmail"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvActivityPrice"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvActivityDesc"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnActivityBook"
+        android:text="Book"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/tvActivityPrice"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
