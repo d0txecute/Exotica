@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="35dp">
+
+        <ImageView
+            android:id="@+id/ivActivityImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+
+        <View
+            android:id="@+id/ivActivityGradient"
+            android:background="@drawable/activity_detail_view_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+
+        <TextView
+            android:id="@+id/tvActivityName"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tvActivityLocationLabel"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tvActivityPrice"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvActivityName"
+            android:layout_above="@id/tvActivityLocationLabel"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:id="@+id/tvActivityLocationLabel"
+            android:text="Location"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivActivityImage"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvActivityLocation"
+            android:fontFamily="sans-serif-light"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvActivityLocationLabel"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvActivityContactLabel"
+            android:text="Contact Information"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvActivityLocation"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvActivityContactPhone"
+            android:fontFamily="sans-serif-light"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvActivityContactLabel"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvActivityContactEmail"
+            android:fontFamily="sans-serif-light"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvActivityContactPhone"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvActivityDescLabel"
+            android:text="Description"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvActivityContactEmail"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvActivityDesc"
+            android:fontFamily="sans-serif-light"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvActivityDescLabel"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btnActivityBook"
+            android:text="Book"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/tvActivityDesc"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</ScrollView>
