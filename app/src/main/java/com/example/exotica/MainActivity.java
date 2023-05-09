@@ -2,9 +2,11 @@ package com.example.exotica;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -40,4 +42,15 @@ public class MainActivity extends AppCompatActivity {
 //            // Failed to read value
 //            Log.w(TAG, "Failed to read value.", error.toException());
 //    }
+
+//    Buttons to go to other pages
+    public void btn_bookHotel(View view) {
+        Intent intent = new Intent(this, Hotel.class);
+        startActivity(intent);
+    }
+
+    public void btn_findActivity(View view) {
+        Intent intent = new Intent(this, Tourism.class);
+        startActivity(intent);
+    }
 }
