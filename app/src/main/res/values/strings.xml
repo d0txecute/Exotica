@@ -28,4 +28,6 @@
     <string name="rating">rating</string>
     <string name="desc">Desc</string>
     <string name="price">price</string>
+    <string name="turtle_watchingg"><![CDATA[Turtle_Watching>]]></string>
+    <string name="turtle_watching1">Turtle Watching</string>
 </resources>
