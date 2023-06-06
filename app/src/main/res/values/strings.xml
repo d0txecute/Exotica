@@ -22,4 +22,10 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="turtle_watching">Turtle Watching</string>
+    <string name="date">date</string>
+    <string name="phone">phone</string>
+    <string name="rating">rating</string>
+    <string name="desc">Desc</string>
+    <string name="price">price</string>
 </resources>
