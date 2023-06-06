@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/babyblue"
     >
 
 
@@ -16,9 +16,10 @@
 
     <TextView
         android:id="@+id/tvactivityName"
+        android:fontFamily="@font/oleo_script_swash_caps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="90dp"
         android:text="@string/turtle_watching1"
         android:textSize="30sp"
         android:textStyle="bold"
