@@ -5,24 +5,24 @@ import java.io.Serializable;
 public class Tourism implements Serializable {
     private String activityName; // Name
     private String activityImageName; // Image Name
-    private String activityLocation; //Location
-    private int activityDate; // Date
-    private double activityPrice; // Price
-    private String activityDesc; // Description
-    private double activityRating; // Rating
-    private int activityContactPhone; // Phone Number
-    private String activityContactEmail; // Email Address
+    //private String activityLocation; //Location
+    //private int activityDate; // Date
+    //private double activityPrice; // Price
+    //private String activityDesc; // Description
+   //private double activityRating; // Rating
+    //private int activityContactPhone; // Phone Number
+    //private String activityContactEmail; // Email Address
 
-    public Tourism(String activityName, String activityImageName, String activityLocation, int activityDate, double activityPrice, String activityDesc, double activityRating, int activityContactPhone, String activityContactEmail) {
+    public Tourism(String activityName, String activityImageName) // String activityLocation, int activityDate, double activityPrice, String activityDesc, double activityRating, int activityContactPhone, String activityContactEmail) {
         this.activityName = activityName;
         this.activityImageName = activityImageName;
-        this.activityLocation = activityLocation;
-        this.activityDate = activityDate;
-        this.activityPrice = activityPrice;
-        this.activityDesc = activityDesc;
-        this.activityRating = activityRating;
-        this.activityContactPhone = activityContactPhone;
-        this.activityContactEmail = activityContactEmail;
+       // this.activityLocation = activityLocation;
+        //this.activityDate = activityDate;
+        //this.activityPrice = activityPrice;
+        //this.activityDesc = activityDesc;
+        //this.activityRating = activityRating;
+        //this.activityContactPhone = activityContactPhone;
+        //this.activityContactEmail = activityContactEmail;
     }
 
     public String getActivityName() {
@@ -33,13 +33,13 @@ public class Tourism implements Serializable {
         return activityImageName;
     }
 
-    public String getActivityLocation() {return activityLocation; }
+    // public String getActivityLocation() {return activityLocation; }
 
-    public int getActivityDate() {
-        return activityDate;
+    /* public int getActivityDate() {
+      return activityDate;
     }
 
-    public double getActivityPrice() {
+//public double getActivityPrice() {
         return activityPrice;
     }
 
