@@ -23,17 +23,19 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private List<Tourism> tourismList= new ArrayList<>();
     private TourismAdapter tourismAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         RecyclerView recyclerView= findViewById(R.id.recyclerView);
         tourismAdapter= new TourismAdapter();
 
 
        setSampleTourismData();
-        recyclerView.setHasFixedSize(true);
+       recyclerView.setHasFixedSize(true);
 
         LinearLayoutManager linearLayoutManager= new LinearLayoutManager(this);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -47,33 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    // I added this from now so we dont have to mess around with it later - database has been set up
-//    // Write a message to the database
-//    FirebaseDatabase database = FirebaseDatabase.getInstance();
-//    DatabaseReference myRef = database.getReference("message");
-//
-//    myRef.setValue("Hello, World!");
-//
-//    // Set Database Persistence
-//    database.setPersistenceEnabled(true);
 
-    // Read from the database
-//    myRef.addValueEventListener(new ValueEventListener() {
-//        @Override
-//        public void onDataChange(DataSnapshot dataSnapshot) {
-//            // This method is called once with the initial value and again
-//            // whenever data at this location is updated.
-//            String value = dataSnapshot.getValue(String.class);
-//            Log.d(TAG, "Value is: " + value);
-//        }
-//
-//        @Override
-//        public void onCancelled(DatabaseError error) {
-//            // Failed to read value
-//            Log.w(TAG, "Failed to read value.", error.toException());
-//    }
-
-//    Buttons to go to other pages
     public void btn_bookHotel(View view) {
         Intent intent = new Intent(this, Hotel.class);
         startActivity(intent);
@@ -83,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Tourism.class);
         startActivity(intent);
     }
+
 
     private class TourismAdapter extends RecyclerView.Adapter<TourismAdapter.TourismViewHolder> {
 
@@ -137,28 +114,27 @@ public class MainActivity extends AppCompatActivity {
 
     private void setSampleTourismData() {
 
-            Tourism tourism = new Tourism("Turtle Watching", "turtle.jpg");
-            tourismList.add(tourism);
+        Tourism tourism = new Tourism("Turtle Watching", "turtle.jpg", "Sur", 30/06/2023,20, "A ..", 5,98434201,"turtleoman@gmail.com");
 
-            Tourism tourism1 = new Tourism("Snorkling", "snorkling.jpg");
+        Tourism tourism1 = new Tourism("Snorkling", "snorkling.jpg");
             tourismList.add(tourism);
 
         Tourism tourism1 = new Tourism("Quad Biking", "quadbike.jpg");
         tourismList.add(tourism);
 
-        Tourism tourism1 = new Tourism("Desert Drifting", "drifting.jpg");
+        Tourism tourism2 = new Tourism("Desert Drifting", "drifting.jpg");
         tourismList.add(tourism);
 
-        Tourism tourism1 = new Tourism("Hiking", "hiking.jpg");
+        Tourism tourism3 = new Tourism("Hiking", "hiking.jpg");
         tourismList.add(tourism);
 
-        Tourism tourism1 = new Tourism("Paragliding", "paragliding.jpg");
+        Tourism tourism4 = new Tourism("Paragliding", "paragliding.jpg");
         tourismList.add(tourism);
 
-        Tourism tourism1 = new Tourism("Parasailing", "parasailing.jpg");
+        Tourism tourism5 = new Tourism("Parasailing", "parasailing.jpg");
         tourismList.add(tourism);
 
-        Tourism tourism1 = new Tourism("Boat Trip", "boat.jpg");
+        Tourism tourism6 = new Tourism("Boat Trip", "boat.jpg");
         tourismList.add(tourism);
 
 
@@ -167,6 +143,33 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+// I added this from now so we dont have to mess around with it later - database has been set up
+//    // Write a message to the database
+//    FirebaseDatabase database = FirebaseDatabase.getInstance();
+//    DatabaseReference myRef = database.getReference("message");
+//
+//    myRef.setValue("Hello, World!");
+//
+//    // Set Database Persistence
+//    database.setPersistenceEnabled(true);
+
+// Read from the database
+//    myRef.addValueEventListener(new ValueEventListener() {
+//        @Override
+//        public void onDataChange(DataSnapshot dataSnapshot) {
+//            // This method is called once with the initial value and again
+//            // whenever data at this location is updated.
+//            String value = dataSnapshot.getValue(String.class);
+//            Log.d(TAG, "Value is: " + value);
+//        }
+//
+//        @Override
+//        public void onCancelled(DatabaseError error) {
+//            // Failed to read value
+//            Log.w(TAG, "Failed to read value.", error.toException());
+//    }
+
+//    Buttons to go to other pages
 
 
 
